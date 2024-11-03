@@ -88,30 +88,77 @@ function processCSV(file) {
     });
 }
 
+// example for QB:
+
+// WORKING:
+// fetch("https://api.unabated.com/api/props/nfl/widereceiver/receivingyards/6/67/0", {
+//   "headers": {
+//     "accept": "application/json, text/plain, */*",
+//     "accept-language": "en-US,en;q=0.9,la;q=0.8",
+//     "priority": "u=1, i",
+//     "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+//     "sec-ch-ua-mobile": "?0",
+//     "sec-ch-ua-platform": "\"macOS\"",
+//     "sec-fetch-dest": "empty",
+//     "sec-fetch-mode": "cors",
+//     "sec-fetch-site": "same-site",
+//     "x-amz-cf-v-id": "dNSob7rQOiJFE_59NDSm7tuZ6ed5MA_8w8CHVqr8tGSFYpgzEUqBuQ=="
+//   },
+//   "referrer": "https://unabated.com/",
+//   "referrerPolicy": "strict-origin-when-cross-origin",
+//   "body": null,
+//   "method": "GET",
+//   "mode": "cors",
+//   "credentials": "include"
+// });
+
+// // BROKEN:
+// fetch("https://api.unabated.com/api/props/nfl/widereceiver/receivingyards/0/4.3/0", {
+//   "headers": {
+//     "accept": "*/*",
+//     "accept-language": "en-US,en;q=0.9,la;q=0.8",
+//     "content-type": "application/json",
+//     "priority": "u=1, i",
+//     "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+//     "sec-ch-ua-mobile": "?0",
+//     "sec-ch-ua-platform": "\"macOS\"",
+//     "sec-fetch-dest": "empty",
+//     "sec-fetch-mode": "cors",
+//     "sec-fetch-site": "same-site"
+//   },
+//   "referrer": "https://unabated.com/",
+//   "referrerPolicy": "strict-origin-when-cross-origin",
+//   "body": null,
+//   "method": "POST",
+//   "mode": "cors",
+//   "credentials": "omit"
+// });
+
 async function callPlayerApi(player, position) {
-    const baseUrl = 'https://api.unabated.com/v2/projections/playerProps/nfl/';
+    // const baseUrl = 'https://api.unabated.com/v2/projections/playerProps/nfl/';
+    const baseUrl = 'https://api.unabated.com/api/props/nfl/';
     let url;
 
     switch (position) {
         case 'QB':
             const completions = player.Completions || 0;
-            const passingYards = player.PassingYards || 0;
-            url = `${baseUrl}QB/${Math.min(completions, passingYards)}/${Math.max(completions, passingYards)}/0`;
+            const passingYards = player['Passing Yards'] || 0;
+            url = `${baseUrl}quarterback/passingyards/${Math.min(completions, passingYards)}/${Math.max(completions, passingYards)}/0`;
             break;
         case 'RB':
-            const rushingYards = player.RushingYards || 0;
+            const rushingYards = player['Rushing Yards'] || 0;
             const carries = player.Carries || 0;
-            url = `${baseUrl}RB/${Math.min(rushingYards, carries)}/${Math.max(rushingYards, carries)}/0`;
+            url = `${baseUrl}runningback/rushingyards/${Math.min(rushingYards, carries)}/${Math.max(rushingYards, carries)}/0`;
             break;
         case 'WR':
-            const receivingYards = player.ReceivingYards || 0;
+            const receivingYards = player['Receiving Yards'] || 0;
             const wrReceptions = player.Receptions || 0;
-            url = `${baseUrl}WR/${Math.min(receivingYards, wrReceptions)}/${Math.max(receivingYards, wrReceptions)}/0`;
+            url = `${baseUrl}widereceiver/receivingyards/${Math.min(receivingYards, wrReceptions)}/${Math.max(receivingYards, wrReceptions)}/0`;
             break;
         case 'TE':
-            const teReceivingYards = player.ReceivingYards || 0;
+            const teReceivingYards = player['Receiving Yards'] || 0;
             const teReceptions = player.Receptions || 0;
-            url = `${baseUrl}TE/${Math.min(teReceivingYards, teReceptions)}/${Math.max(teReceivingYards, teReceptions)}/0`;
+            url = `${baseUrl}tightend/receivingyards/${Math.min(teReceivingYards, teReceptions)}/${Math.max(teReceivingYards, teReceptions)}/0`;
             break;
         default:
             throw new Error(`Invalid position: ${position}`);
@@ -119,11 +166,12 @@ async function callPlayerApi(player, position) {
 
     try {
         const response = await fetch(url, {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: null
+            body: null,
+            credentials: "include"
         });
 
         if (!response.ok) {
