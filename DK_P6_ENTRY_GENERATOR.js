@@ -22,8 +22,8 @@ const analyzedPicks = [
         "etrBlocks": 0.79,
         "etrMinutes": 32.5,
         "etrPosition": "PF/SF",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Jalen Williams",
@@ -100,8 +100,8 @@ const analyzedPicks = [
         "etrBlocks": 0.79,
         "etrMinutes": 32.5,
         "etrPosition": "PF/SF",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Derrick Jones Jr.",
@@ -178,8 +178,8 @@ const analyzedPicks = [
         "etrBlocks": 2.04,
         "etrMinutes": 31.5,
         "etrPosition": "C",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Chet Holmgren",
@@ -256,8 +256,8 @@ const analyzedPicks = [
         "etrBlocks": 2.04,
         "etrMinutes": 31.5,
         "etrPosition": "C",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Chet Holmgren",
@@ -334,8 +334,8 @@ const analyzedPicks = [
         "etrBlocks": 2.04,
         "etrMinutes": 31.5,
         "etrPosition": "C",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Norman Powell",
@@ -412,8 +412,8 @@ const analyzedPicks = [
         "etrBlocks": 0.41,
         "etrMinutes": 32.5,
         "etrPosition": "SF/SG",
-        "etrTeam": "LAC",
-        "etrOpponent": "OKC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Shai Gilgeous-Alexander",
@@ -490,8 +490,8 @@ const analyzedPicks = [
         "etrBlocks": 0.86,
         "etrMinutes": 34.5,
         "etrPosition": "PG",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Shai Gilgeous-Alexander",
@@ -568,8 +568,8 @@ const analyzedPicks = [
         "etrBlocks": 0.86,
         "etrMinutes": 34.5,
         "etrPosition": "PG",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Shai Gilgeous-Alexander",
@@ -646,8 +646,8 @@ const analyzedPicks = [
         "etrBlocks": 0.39,
         "etrMinutes": 21.5,
         "etrPosition": "PG/SG",
-        "etrTeam": "LAC",
-        "etrOpponent": "OKC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Kris Dunn",
@@ -724,8 +724,8 @@ const analyzedPicks = [
         "etrBlocks": 0.69,
         "etrMinutes": 34.5,
         "etrPosition": "PG",
-        "etrTeam": "LAC",
-        "etrOpponent": "OKC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "James Harden",
@@ -802,8 +802,8 @@ const analyzedPicks = [
         "etrBlocks": 0.69,
         "etrMinutes": 34.5,
         "etrPosition": "PG",
-        "etrTeam": "LAC",
-        "etrOpponent": "OKC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "James Harden",
@@ -880,8 +880,8 @@ const analyzedPicks = [
         "etrBlocks": 0.69,
         "etrMinutes": 34.5,
         "etrPosition": "PG",
-        "etrTeam": "LAC",
-        "etrOpponent": "OKC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Ivica Zubac",
@@ -958,8 +958,8 @@ const analyzedPicks = [
         "etrBlocks": 0.53,
         "etrMinutes": 27,
         "etrPosition": "SF/SG",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Luguentz Dort",
@@ -1036,8 +1036,8 @@ const analyzedPicks = [
         "etrBlocks": 0.5,
         "etrMinutes": 23,
         "etrPosition": "PG",
-        "etrTeam": "OKC",
-        "etrOpponent": "LAC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     },
     {
         "player": "Terance Mann",
@@ -1114,8 +1114,8 @@ const analyzedPicks = [
         "etrBlocks": 0.28,
         "etrMinutes": 23.5,
         "etrPosition": "SG/SF",
-        "etrTeam": "LAC",
-        "etrOpponent": "OKC"
+        "etrTeam": "MIN",
+        "etrOpponent": "LAL"
     }
 ];
 
@@ -1131,7 +1131,7 @@ const analyzedPicks = [
 
 const GAMES_TO_SKIP = new Set([]);
 const GAMES_TO_TARGET = new Set([]); // new Set(['BOS/CHA', 'CLE/ORL', 'DET/NYK']);
-const CONFIG = {
+const REGULAR_CONFIG = {
 
     // DO NOT UNCOMMENT FOR V1 >>>>
     // FOR TWO AND THREE LEG SLIPS SHOULD INSTEAD FOCUS ON THE BEST PICKS
@@ -1146,17 +1146,27 @@ const CONFIG = {
     6: { overSlips: 0, underSlips: 20, amountPerSlip: 5 },
 };
 
-const IS_MIXUP_CONFIG_ENABLED = false;
+const IS_FULL_MIXUP_CONFIG_ENABLED = false;
 const OVER_THRESHOLD = 0.58;
 const UNDER_THRESHOLD = 0.57;
 const MIX_UP_CONFIG = {
-    // TODO: CONSIDER WRITING SOME LOGIC TO TAKE 4 OR 5 LEGS FROM ONE GAME AND MIX IN 1-2 LEGS FROM ANOTHER GAME
-
     3: { slips: 20, amountPerSlip: 40, overThreshold: OVER_THRESHOLD, underThreshold: UNDER_THRESHOLD },
     4: { slips: 20, amountPerSlip: 25, overThreshold: OVER_THRESHOLD, underThreshold: UNDER_THRESHOLD },
     // 5: { slips: 10, amountPerSlip: 7, overThreshold: OVER_THRESHOLD, underThreshold: UNDER_THRESHOLD },
     6: { slips: 50, amountPerSlip: 5, overThreshold: OVER_THRESHOLD, underThreshold: UNDER_THRESHOLD },
 }
+
+const IS_PARTIAL_MIXUP_CONFIG_ENABLED = true;
+const MIXIN_THRESHOLD = 0.55;
+const UNDER_RATIO = 0.75;
+const PARTIAL_MIX_UP_CONFIG = {
+    // NOTE: THESE ALL TURN INTO 6 LEG SLIPS
+    3: { overSlips: 5, underSlips: 20, amountPerSlip: 5 },
+    4: { overSlips: 5, underSlips: 20, amountPerSlip: 5 },
+    5: { overSlips: 5, underSlips: 20, amountPerSlip: 5 },
+};
+
+const [OVER, UNDER] = ["O", "U"];
 
 const [P, A, R] = ['PTS', 'AST', 'REB'];
 const SIMILAR_CATEGORIES_MAPPER = {
@@ -1184,7 +1194,6 @@ function bucketLinesByGame(analyzedPicks) {
 
 function bucketByOverUnder(bucketedByGame) {
     return Object.entries(bucketedByGame).reduce((acc, [game, postedLines]) => {
-        const [OVER, UNDER] = ["O", "U"];
         const buckets = postedLines.reduce((acc, cv) => {
             const overUnder = parseFloat(cv.probabilityOver) > 0.5 ? OVER : UNDER;
             acc[overUnder].push(cv);
@@ -1250,12 +1259,12 @@ function optimizer(bucketOfPicks, { numberOfLegsPerSlip, amountPerSlip }, countO
     }
 }
 
-function optimizeByBucket(bucketedByGameAndOverUnder) {
+function optimizeByBucket(bucketedByGameAndOverUnder, config) {
     try {
         return Object.entries(bucketedByGameAndOverUnder).reduce((acc, [game, overUnderBucketsObj]) => {
             if (GAMES_TO_TARGET.size === 0 || GAMES_TO_TARGET.has(game)) {
                 acc[game] = Object.entries(overUnderBucketsObj).reduce((acc, [overOrUnder, bucketOfPicks]) => {
-                    acc[overOrUnder] = Object.entries(CONFIG).reduce((acc, [numberOfLegsPerSlip, { amountPerSlip }]) => {
+                    acc[overOrUnder] = Object.entries(config).reduce((acc, [numberOfLegsPerSlip, { amountPerSlip }]) => {
                         acc[numberOfLegsPerSlip] = optimizer(bucketOfPicks, { numberOfLegsPerSlip, amountPerSlip });
                         return acc;
                     }, {});
@@ -1276,7 +1285,7 @@ function getMaxExposure(numberOfLegsPerSlip, originalOverUnderBucketForGame) {
     return Math.min(maxExposure, 0.37);
 }
 
-function filterByMaxExposure(numberOfLegsPerSlip, pickArray, overOrUnder, originalOverUnderBucketForGame) {
+function filterByMaxExposure(numberOfLegsPerSlip, pickArray, overOrUnder, originalOverUnderBucketForGame, config) {
     const likelihoodOfWinningTuples = pickArray.map((slipObject) => (
         [
             slipObject.slip.reduce((acc, cv) => cv.maxProb * acc, 1),
@@ -1284,7 +1293,7 @@ function filterByMaxExposure(numberOfLegsPerSlip, pickArray, overOrUnder, origin
         ]
     ));
     const sorted = likelihoodOfWinningTuples.sort((a, b) => b[0] - a[0]);
-    const { overSlips, underSlips } = CONFIG[numberOfLegsPerSlip];
+    const { overSlips, underSlips } = config[numberOfLegsPerSlip];
     const maxExposure = getMaxExposure(numberOfLegsPerSlip, originalOverUnderBucketForGame);
     const numberOfSlips = overOrUnder === 'O' ? overSlips : underSlips
     const maxUses = Math.ceil(numberOfSlips * maxExposure);
@@ -1317,19 +1326,24 @@ function filterByMaxExposure(numberOfLegsPerSlip, pickArray, overOrUnder, origin
     return filtered.slice(0, numberOfSlips);
 }
 
-function filterSlips(optimizedSlipsByGame, bucketedByGameAndOverUnder) {
-    return Object.entries(optimizedSlipsByGame).reduce((acc, [game, overUnderBucketsObj]) => {
-        const overUnderBucketsForGame = bucketedByGameAndOverUnder[game];
-        acc[game] = Object.entries(overUnderBucketsObj).reduce((acc, [overOrUnder, bucketOfPicks]) => {
-            const originalOverUnderBucketForGame = overUnderBucketsForGame[overOrUnder];
-            acc[overOrUnder] = Object.entries(bucketOfPicks).reduce((acc, [numberOfLegsPerSlip, pickArray]) => {
-                acc[numberOfLegsPerSlip] = filterByMaxExposure(numberOfLegsPerSlip, pickArray, overOrUnder, originalOverUnderBucketForGame);
+function filterSlips(optimizedSlipsByGame, bucketedByGameAndOverUnder, config) {
+    try {
+        return Object.entries(optimizedSlipsByGame).reduce((acc, [game, overUnderBucketsObj]) => {
+            const overUnderBucketsForGame = bucketedByGameAndOverUnder[game];
+            acc[game] = Object.entries(overUnderBucketsObj).reduce((acc, [overOrUnder, bucketOfPicks]) => {
+                const originalOverUnderBucketForGame = overUnderBucketsForGame[overOrUnder];
+                acc[overOrUnder] = Object.entries(bucketOfPicks).reduce((acc, [numberOfLegsPerSlip, pickArray]) => {
+                    acc[numberOfLegsPerSlip] = filterByMaxExposure(numberOfLegsPerSlip, pickArray, overOrUnder, originalOverUnderBucketForGame, config);
+                    return acc;
+                }, {});
                 return acc;
             }, {});
             return acc;
         }, {});
-        return acc;
-    }, {});
+    } catch (error) {
+        console.log({ error });
+        debugger;
+    }
 }
 
 function mapToEntryFormat(slips) {
@@ -1397,8 +1411,61 @@ function filterMixupSlips(mixupSlips) {
     });
 }
 
+function pickX(array, x) {
+    const shuffled = array.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, x);
+}
+
+function mixInOneOtherGame(filteredSlips, bucketedByGameAndOverUnder) {
+    debugger;
+
+    // THIS IS CLOSE BUT NOT QUITE THERE YET I DON'T THINK
+
+    const adjSlips = Object.entries(filteredSlips).reduce((acc, [game, overUnderBucketsObj]) => {
+        acc[game] = Object.entries(overUnderBucketsObj).reduce((acc, [overOrUnder, bucketOfPicks]) => {
+            acc[overOrUnder] = Object.entries(bucketOfPicks).reduce((acc, [numberOfLegsPerSlip, pickArray]) => {
+                let filteredRandomSlips = [];
+                let i = 0;
+                while (i < 50) { // this should hopefully never happen
+                    console.log({ i });
+                    const randomGame = Object.keys(bucketedByGameAndOverUnder)[Math.floor(Math.random() * Object.keys(bucketedByGameAndOverUnder).length)];
+                    const randomOverUnder = Math.random() < UNDER_THRESHOLD ? UNDER : OVER;
+                    console.log({ randomOverUnder });
+                    const randomSlips = bucketedByGameAndOverUnder[randomGame][randomOverUnder];
+                    filteredRandomSlips = randomSlips.filter(slip => slip.maxProb > MIXIN_THRESHOLD);
+
+                    if (filteredRandomSlips.length > 3) {
+                        break;
+                    }
+                    i++;
+                }
+
+                let additionalSlips = [];
+                switch (numberOfLegsPerSlip) {
+                    case '3':
+                        additionalSlips = pickX(filteredRandomSlips, 3);
+                        break;
+                    case '4':
+                        additionalSlips = pickX(filteredRandomSlips, 2);
+                        break;
+                    case '5':
+                        additionalSlips = pickX(filteredRandomSlips, 1);
+                        break;
+                }
+
+                acc[numberOfLegsPerSlip] = [...pickArray, ...additionalSlips];
+                return acc;
+            }, {});
+            return acc;
+        }, {});
+        return acc;
+    }, {});
+
+    debugger;
+}
+
 function slipsByGame(analyzedPicks) {
-    if (IS_MIXUP_CONFIG_ENABLED) {
+    if (IS_FULL_MIXUP_CONFIG_ENABLED) {
         const filteredAnalyedPicks = analyzedPicks.filter(pick => {
             const isOver = parseFloat(pick.probabilityOver) > 0.5;
             if (isOver) {
@@ -1432,6 +1499,24 @@ function slipsByGame(analyzedPicks) {
         const combinedSlips = Object.values(trimmedMixupSlips).flat();
         const readyToSubmit = mapToEntryFormat(combinedSlips);
         const summary = summarize(readyToSubmit);
+
+        debugger;
+
+        return;
+    }
+
+    if (IS_PARTIAL_MIXUP_CONFIG_ENABLED) {
+        const bucketedByGame = bucketLinesByGame(analyzedPicks);
+        const bucketedByGameAndOverUnder = bucketByOverUnder(bucketedByGame);
+        const optimizedSlipsByGame = optimizeByBucket(bucketedByGameAndOverUnder, PARTIAL_MIX_UP_CONFIG);
+        const filteredSlips = filterSlips(optimizedSlipsByGame, bucketedByGameAndOverUnder, PARTIAL_MIX_UP_CONFIG);
+        const withMixedInValues = mixInOneOtherGame(filteredSlips, bucketedByGameAndOverUnder);
+
+        debugger;
+
+        const readyToSubmit = mapToEntryFormat(withMixedInValues);
+        const summary = summarize(readyToSubmit);
+
         debugger;
 
         return;
@@ -1439,8 +1524,8 @@ function slipsByGame(analyzedPicks) {
 
     const bucketedByGame = bucketLinesByGame(analyzedPicks);
     const bucketedByGameAndOverUnder = bucketByOverUnder(bucketedByGame);
-    const optimizedSlipsByGame = optimizeByBucket(bucketedByGameAndOverUnder);
-    const filteredSlips = filterSlips(optimizedSlipsByGame, bucketedByGameAndOverUnder);
+    const optimizedSlipsByGame = optimizeByBucket(bucketedByGameAndOverUnder, REGULAR_CONFIG);
+    const filteredSlips = filterSlips(optimizedSlipsByGame, bucketedByGameAndOverUnder, REGULAR_CONFIG);
 
     const readyToSubmit = mapToEntryFormat(filteredSlips);
     const summary = summarize(readyToSubmit);
